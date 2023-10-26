@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Previsione Meteo</title>
+</head>
+<body>
+    <h1>Previsione Meteo per {{ city }}</h1>
+    <form method="POST">
+        <label for="city">Inserisci una città: </label>
+        <input type="text" name="city" id="city" value="{{ city }}">
+        <input type="submit" value="Ottieni Meteo">
+    </form>
+    <p>{{ weather_data }}</p>
+</body>
+</html>

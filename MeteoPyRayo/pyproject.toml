@@ -1,0 +1,92 @@
+# This project was generated with 0.3.16 using template: https://github.com/beeware/briefcase-template@v0.3.16
+[tool.briefcase]
+project_name = "MeteoPyRayo"
+bundle = "patriarchidylan.it"
+version = "0.0.1"
+url = "https://www.patriarchidylan.it/MeteoPyRayo"
+license = "Proprietary"
+author = "Dylan Patriarchi"
+author_email = "dylanpat2004@icloud.com"
+
+[tool.briefcase.app.MeteoPyRayo]
+formal_name = "MeteoPyRayo"
+description = "API Weather for searching weather in python for an android app"
+long_description = """More details about the app should go here.
+"""
+icon = "src/MeteoPyRayo/resources/MeteoPyRayo"
+sources = [
+    "src/MeteoPyRayo",
+]
+test_sources = [
+    "tests",
+]
+
+requires = [
+]
+test_requires = [
+    "pytest",
+]
+
+[tool.briefcase.app.MeteoPyRayo.macOS]
+universal_build = true
+requires = [
+    "std-nslog~=1.0.0"
+]
+
+[tool.briefcase.app.MeteoPyRayo.linux]
+requires = [
+]
+
+[tool.briefcase.app.MeteoPyRayo.linux.system.debian]
+system_requires = [
+]
+
+system_runtime_requires = [
+]
+
+[tool.briefcase.app.MeteoPyRayo.linux.system.rhel]
+system_requires = [
+]
+
+system_runtime_requires = [
+]
+
+[tool.briefcase.app.MeteoPyRayo.linux.system.suse]
+system_requires = [
+]
+
+system_runtime_requires = [
+]
+
+[tool.briefcase.app.MeteoPyRayo.linux.system.arch]
+system_requires = [
+]
+
+system_runtime_requires = [
+]
+
+[tool.briefcase.app.MeteoPyRayo.linux.appimage]
+manylinux = "manylinux2014"
+
+system_requires = [
+]
+linuxdeploy_plugins = []
+
+[tool.briefcase.app.MeteoPyRayo.linux.flatpak]
+flatpak_runtime = "org.freedesktop.Platform"
+flatpak_runtime_version = "22.08"
+flatpak_sdk = "org.freedesktop.Sdk"
+
+[tool.briefcase.app.MeteoPyRayo.windows]
+requires = []
+
+# Mobile deployments
+[tool.briefcase.app.MeteoPyRayo.iOS]
+supported = false
+
+[tool.briefcase.app.MeteoPyRayo.android]
+supported = false
+
+# Web deployments
+[tool.briefcase.app.MeteoPyRayo.web]
+supported = false
